@@ -29,6 +29,7 @@
 
 .container {
   width: 1280px;
+  margin: auto;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -372,5 +373,57 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.header-wrapper {
+  width: 1140px;
+  margin: auto;
+  padding: 27px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-navigation {
+  -ms-flex-preferred-size: 53%;
+      flex-basis: 53%;
+  list-style-type: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-navigation__item:last-child {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.header-navigation__link {
+  text-decoration: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #183B56;
+  margin-right: 40px;
+}
+
+.header__button {
+  display: inline-block;
+  padding: 11px 24px;
+  border: 2px solid #1565D8;
+  border-radius: 8px;
+  color: #1565D8;
 }
 /*# sourceMappingURL=style.css.map */
