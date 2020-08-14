@@ -1,0 +1,96 @@
+.trending
+  & > .container
+    max-width: 1130px
+  padding-top: 26px
+  &-title
+    font-family: HKGrotesk
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+    color: $font-color
+    margin-top: 0
+    &__wrapper
+      display: flex
+      justify-content: space-between
+  &-links
+    list-style-type: none
+    display: flex
+    &__link
+      margin-left: 36px
+      text-decoration: none
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 25px
+      color: $hero-text-color
+      cursor: pointer
+      &--selected
+        font-weight: bold
+        color: $font-color
+      &:hover
+        box-shadow: 0 0 10px $hover-color
+  &__wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-top: 8px
+  &__card
+    width: 260px
+    padding-bottom: 48px
+    &--empty
+      background-color: $link-color
+      border-radius: 8px
+      height: 350px
+      position: relative
+      &__wrapper
+        position: absolute
+        left: 45%
+        top: 35%
+      &__title
+        font-family: HKGrotesk
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 32px
+        text-align: center
+        letter-spacing: 0.2px
+        color: $white
+        transform: translateX(-40%)
+    &-image
+      object-fit: cover
+      height: 350px
+      border-radius: 8px
+      overflow: hidden
+      &--empty
+        margin-bottom: 6px
+    &-title
+      margin-left: 12px
+      margin-top: 16px
+      margin-bottom: 4px
+      font-family: HKGrotesk
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: $font-color
+    &-price
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      &__wrapper
+        padding-left: 12px
+        padding-right: 8px
+        display: flex
+        justify-content: space-between
+
+
+
+
+
+    
