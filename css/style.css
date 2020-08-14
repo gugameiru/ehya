@@ -670,6 +670,11 @@ template {
   color: #1565D8;
 }
 
+.collection__link:hover {
+  -webkit-box-shadow: 0 0 10px #6DB0F1;
+          box-shadow: 0 0 10px #6DB0F1;
+}
+
 .collection__arrow {
   margin-left: 24px;
 }
