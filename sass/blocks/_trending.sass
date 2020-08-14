@@ -31,7 +31,7 @@
         font-weight: bold
         color: $font-color
       &:hover
-        box-shadow: 0 0 10px $hover-color
+        box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
   &__wrapper
     display: flex
     flex-wrap: wrap
@@ -40,6 +40,7 @@
   &__card
     width: 260px
     padding-bottom: 50px
+    text-decoration: none
     &--empty
       background-color: $link-color
       border-radius: 8px
@@ -47,7 +48,7 @@
       position: relative
       cursor: pointer
       &:hover
-        box-shadow: 0 0 10px $hover-color
+        box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
       &__wrapper
         position: absolute
         display: flex
@@ -75,6 +76,8 @@
         border-radius: 8px
         overflow: hidden
         position: relative
+        &:hover
+          box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
       &--001
         height: 100%
       &--002
@@ -119,11 +122,16 @@
       font-weight: normal
       font-size: 20px
       line-height: 36px
+      color: $hero-text-color
       &__wrapper
         padding-left: 12px
         padding-right: 8px
         display: flex
         justify-content: space-between
+    &-button
+      border: none
+      background-color: transparent
+      cursor: pointer
 
 
 

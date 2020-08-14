@@ -74,14 +74,14 @@
       border-radius: 8px
       cursor: pointer
       &:hover
-        box-shadow: 0 0 10px $hover-color
+        box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
   &-icon
     &__wrapper
       display: flex
     &__link
       text-decoration: none
       &:hover
-        box-shadow: 0 0 10px $hover-color
+        box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
     &__item
       display: flex
       align-items: center
@@ -93,15 +93,15 @@
       font-size: 16px
       line-height: 20px
       color: $font-color
-    &__border
-      position: absolute
-      width: 25px
-      height: 25px
-      border: 1px dashed $font-color
-      top: 50%
-      left: 7px
-      transform: translateY(-50%)
-      opacity: 0.4
+    // &__border
+    //   position: absolute
+    //   width: 25px
+    //   height: 25px
+    //   border: 1px dashed $font-color
+    //   top: 50%
+    //   left: 7px
+    //   transform: translateY(-50%)
+    //   opacity: 0.4
     &__image
       margin-right: 8px
 
