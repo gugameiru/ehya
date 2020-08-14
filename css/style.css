@@ -1,7 +1,7 @@
 @font-face {
   font-family: "HKGrotesk";
   src: local("HKGrotesk"), url("../fonts/HKGrotesk-Regular.woff2") format("woff"), url("../fonts/HKGrotesk-Regular.woff2") format("woff2");
-  font-weight: regular;
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: "HKGrotesk";
   src: local("HKGrotesk"), url("../fonts/HKGrotesk-SemiBold.woff") format("woff"), url("../fonts/HKGrotesk-SemiBold.woff2") format("woff2");
-  font-weight: regular;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -884,5 +884,65 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.testimonial > .container {
+  padding: 106px 0;
+  border-bottom: 1px solid #E5EAF4;
+}
+
+.testimonial__swiper {
+  width: 100%;
+  height: 100%;
+  padding: 80px auto;
+}
+
+.testimonial-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  font-family: HKGrotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 42px;
+  letter-spacing: 0.133333px;
+  color: #183B56;
+  text-align: center;
+  cursor: pointer;
+}
+
+.testimonial-text {
+  padding: 12px 200px;
+}
+
+.testimonial-signature {
+  margin-top: -2px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin-bottom: 66px;
+}
+
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  margin: 0 8px !important;
+  display: inline-block;
+  border-radius: 100%;
+  background: #B3BAC5;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #183B56;
 }
 /*# sourceMappingURL=style.css.map */
