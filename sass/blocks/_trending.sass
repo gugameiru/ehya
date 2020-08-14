@@ -39,16 +39,23 @@
     padding-top: 8px
   &__card
     width: 260px
-    padding-bottom: 48px
+    padding-bottom: 50px
     &--empty
       background-color: $link-color
       border-radius: 8px
       height: 350px
       position: relative
+      cursor: pointer
+      &:hover
+        box-shadow: 0 0 10px $hover-color
       &__wrapper
         position: absolute
-        left: 45%
+        display: flex
+        flex-direction: column
+        align-items: center
+        left: 50%
         top: 35%
+        transform: translateX(-50%)
       &__title
         font-family: HKGrotesk
         font-style: normal
@@ -58,17 +65,46 @@
         text-align: center
         letter-spacing: 0.2px
         color: $white
-        transform: translateX(-40%)
     &-image
       object-fit: cover
-      height: 350px
-      border-radius: 8px
-      overflow: hidden
+      position: absolute
       &--empty
         margin-bottom: 6px
+      &__wrapper
+        height: 350px
+        border-radius: 8px
+        overflow: hidden
+        position: relative
+      &--001
+        height: 100%
+      &--002
+        width: 200%
+        top: -12%
+        left: -40%
+      &--003
+        transform: scale(-1, 1)
+        width: 150%
+        top: -12%
+        left: -28% 
+      &--004
+        width: 150%
+        top: -38%
+        left: -27%
+      &--005
+        width: 120%
+        top: -4%
+        left: -9% 
+      &--006
+        width: 220%
+        top: -11%
+        left: -50%
+      &--007
+        width: 200%
+        top: -2%
+        left: -48%                  
     &-title
       margin-left: 12px
-      margin-top: 16px
+      margin-top: 18px
       margin-bottom: 4px
       font-family: HKGrotesk
       font-style: normal

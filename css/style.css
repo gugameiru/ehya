@@ -750,7 +750,7 @@ template {
 
 .trending__card {
   width: 260px;
-  padding-bottom: 48px;
+  padding-bottom: 50px;
 }
 
 .trending__card--empty {
@@ -758,12 +758,30 @@ template {
   border-radius: 8px;
   height: 350px;
   position: relative;
+  cursor: pointer;
+}
+
+.trending__card--empty:hover {
+  -webkit-box-shadow: 0 0 10px #6DB0F1;
+          box-shadow: 0 0 10px #6DB0F1;
 }
 
 .trending__card--empty__wrapper {
   position: absolute;
-  left: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 50%;
   top: 35%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .trending__card--empty__title {
@@ -775,25 +793,70 @@ template {
   text-align: center;
   letter-spacing: 0.2px;
   color: #ffffff;
-  -webkit-transform: translateX(-40%);
-          transform: translateX(-40%);
 }
 
 .trending__card-image {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 350px;
-  border-radius: 8px;
-  overflow: hidden;
+  position: absolute;
 }
 
 .trending__card-image--empty {
   margin-bottom: 6px;
 }
 
+.trending__card-image__wrapper {
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.trending__card-image--001 {
+  height: 100%;
+}
+
+.trending__card-image--002 {
+  width: 200%;
+  top: -12%;
+  left: -40%;
+}
+
+.trending__card-image--003 {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  width: 150%;
+  top: -12%;
+  left: -28%;
+}
+
+.trending__card-image--004 {
+  width: 150%;
+  top: -38%;
+  left: -27%;
+}
+
+.trending__card-image--005 {
+  width: 120%;
+  top: -4%;
+  left: -9%;
+}
+
+.trending__card-image--006 {
+  width: 220%;
+  top: -11%;
+  left: -50%;
+}
+
+.trending__card-image--007 {
+  width: 200%;
+  top: -2%;
+  left: -48%;
+}
+
 .trending__card-title {
   margin-left: 12px;
-  margin-top: 16px;
+  margin-top: 18px;
   margin-bottom: 4px;
   font-family: HKGrotesk;
   font-style: normal;
