@@ -15,9 +15,13 @@
       display: flex
       justify-content: space-between
   &-links
+    margin: 0
+    margin-top: 16px
     list-style-type: none
     display: flex
-    &__link
+    align-items: flex-start
+    &__item
+      margin: 0
       margin-left: 36px
       text-decoration: none
       font-family: Open Sans
@@ -33,10 +37,12 @@
       &:hover
         box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
   &__wrapper
-    display: flex
+    display: none
     flex-wrap: wrap
     justify-content: space-between
     padding-top: 8px
+    &--active
+      display: flex
   &__card
     width: 260px
     padding-bottom: 50px

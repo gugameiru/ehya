@@ -41,10 +41,55 @@
       font-size: 20px
       line-height: 36px
       color: $hero-text-color
+      margin-bottom: 48px
+    &__button
+      &-wrapper
+        display: flex
+      &--prev
+        position: relative
+        width: 56px
+        height: 56px
+        border: 2px solid $font-color
+        border-radius: 50%
+        margin-right: 20px
+        cursor: pointer
+        &:hover
+          box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
+      &--next
+        position: relative
+        width: 56px
+        height: 56px
+        border: 2px solid $font-color
+        border-radius: 50%
+        margin-right: 20px
+        cursor: pointer
+        &:hover
+          box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
+      &-image
+        &--prev
+          position: absolute
+          top: 36%
+          left: 40%
+          transform: rotate(180deg)
+        &--next
+          position: absolute
+          top: 36%
+          left: 40%
+  &__swiper
+    &-container
+      flex-basis: 60%
+      height: 500px
+    &-wrapper
+      height: 100%
+    &-slide
+      display: flex
+      justify-content: flex-end
+    
+
   &-picture
     &__wrapper
       position: relative
-      flex-basis: 25%
+      margin-left: 28px
       &:last-child
         margin-right: 5px
     &__title

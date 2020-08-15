@@ -1,4 +1,5 @@
-var mySwiper = new Swiper(".swiper-container", {
+// Подключение Swiper-slider к секции Testimonial
+var mySwiper = new Swiper(".testimonial__swiper-container", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
@@ -11,13 +12,54 @@ var mySwiper = new Swiper(".swiper-container", {
     el: ".swiper-pagination",
   },
 });
-
-var swiperContainer = document.querySelector(".swiper-container");
-
+// Отключение автоперелистывания Swiper-slider Testimonial при наведении мышкой
+var swiperContainer = document.querySelector(".testimonial__swiper-container");
 swiperContainer.addEventListener("mouseenter", () => {
   mySwiper.autoplay.stop();
 });
-
 swiperContainer.addEventListener("mouseleave", () => {
   mySwiper.autoplay.start();
+});
+
+// Подключение Swiper Slider к секции Stories
+
+var mySwiper2 = new Swiper(".stories__swiper-container", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+// Подключение управления Swiper Slider-ом секции Stories
+
+var prevStoriesButton = document.querySelector(
+  ".stories-description__button--prev"
+);
+var nextStoriesButton = document.querySelector(
+  ".stories-description__button--next"
+);
+prevStoriesButton.addEventListener("click", () => {
+  mySwiper2.slidePrev();
+});
+nextStoriesButton.addEventListener("click", () => {
+  mySwiper2.slideNext();
+});
+
+// Подключение табов блока Trending
+$(document).ready(function () {
+  var tabsItem = $(".trending-links__item");
+  var contentItem = $(".trending__wrapper");
+
+  tabsItem.on("click", function (event) {
+    var activeContent = $(this).attr("data-target");
+    console.log(activeContent);
+    tabsItem.removeClass("trending-links__item--selected");
+    contentItem.removeClass("trending__wrapper--active");
+    $(activeContent).addClass("trending__wrapper--active");
+    $(this).addClass("trending-links__item--selected");
+  });
 });
