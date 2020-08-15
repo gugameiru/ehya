@@ -68,14 +68,32 @@
   &-bottom
     &-wrapper
       flex-basis: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+      
+      margin-top: 76px
     &__text
+      margin: 0
       text-align: center
       font-family: Open Sans
       font-style: normal
-      font-weight: 600
+      font-weight: 500
       font-size: 16px
       line-height: 22px
       color: $font-color
+    &__image
+      position: absolute
+      top: 35%
+      left: 29%
+      &-background
+        width: 56px
+        height: 56px
+        border-radius: 50%
+        background-color: $footer-heart-color
+        position: relative
+        margin-bottom: 22px
+      
 
 
       

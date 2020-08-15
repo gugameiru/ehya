@@ -1320,15 +1320,42 @@ template {
 .footer-bottom-wrapper {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 76px;
 }
 
 .footer-bottom__text {
+  margin: 0;
   text-align: center;
   font-family: Open Sans;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   color: #183B56;
+}
+
+.footer-bottom__image {
+  position: absolute;
+  top: 35%;
+  left: 29%;
+}
+
+.footer-bottom__image-background {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #1576D8;
+  position: relative;
+  margin-bottom: 22px;
 }
 /*# sourceMappingURL=style.css.map */
