@@ -861,6 +861,20 @@ template {
   color: #183B56;
 }
 
+.trending__card-title:hover {
+  -webkit-box-shadow: 0 0 20px rgba(109, 176, 241, 0.2) inset, 0 0 20px rgba(109, 176, 241, 0.2);
+          box-shadow: 0 0 20px rgba(109, 176, 241, 0.2) inset, 0 0 20px rgba(109, 176, 241, 0.2);
+}
+
+.trending__card-title-link {
+  text-decoration: none;
+}
+
+.trending__card-title-link:hover {
+  -webkit-box-shadow: 0 0 20px rgba(109, 176, 241, 0.2) inset, 0 0 20px rgba(109, 176, 241, 0.2);
+          box-shadow: 0 0 20px rgba(109, 176, 241, 0.2) inset, 0 0 20px rgba(109, 176, 241, 0.2);
+}
+
 .trending__card-price {
   font-family: Open Sans;
   font-style: normal;
@@ -885,6 +899,11 @@ template {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.trending__card-button:hover {
+  -webkit-box-shadow: 0 0 20px rgba(109, 176, 241, 0.2) inset, 0 0 20px rgba(109, 176, 241, 0.2);
+          box-shadow: 0 0 20px rgba(109, 176, 241, 0.2) inset, 0 0 20px rgba(109, 176, 241, 0.2);
 }
 
 .testimonial > .container {
