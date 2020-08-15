@@ -435,7 +435,40 @@
         </div>
       </div>
     </section>
-    <section class="cta"></section>
+    <section class="cta">
+      <div class="container">
+        <div class="cta-wrapper">
+          <div class="cta-description">
+            <h2 class="cta-description__title">Join Our Newsletter</h2>
+            <p class="cta-description__text">
+              Just insert your email into the field below. And you will get the
+              updates about fashion & styles from us.
+            </p>
+          </div>
+          <form
+            action="send.php"
+            method="POST"
+            class="subscribe cta-subscribe form"
+          >
+            <img
+              src="img/icon-envelope.svg"
+              alt="icon: envelope"
+              class="cta-subscribe__icon"
+            />
+            <input
+              type="email"
+              class="input cta-subscribe__input"
+              placeholder="Your emaill"
+              name="email"
+              required
+            />
+            <button type="submit" class="button cta-subscribe__button">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
     <footer class="footer"></footer>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
