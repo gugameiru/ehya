@@ -1216,4 +1216,119 @@ template {
   -webkit-box-shadow: 0 0 20px rgba(158, 197, 236, 0.3) inset, 0 0 20px rgba(158, 197, 236, 0.3);
           box-shadow: 0 0 20px rgba(158, 197, 236, 0.3) inset, 0 0 20px rgba(158, 197, 236, 0.3);
 }
+
+.footer-wrapper {
+  padding-top: 128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-logo {
+  margin-bottom: 8px;
+}
+
+.footer__first-column-wrapper {
+  -ms-flex-preferred-size: 19%;
+      flex-basis: 19%;
+}
+
+.footer__first-column--icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__first-column-text {
+  margin: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #5A7184;
+  margin-bottom: 28px;
+}
+
+.footer__icon {
+  position: absolute;
+  top: 14px;
+  left: 13px;
+}
+
+.footer__icon--google {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.footer__icon-background {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background-color: rgba(90, 113, 132, 0.1);
+}
+
+.footer-links__title {
+  margin: auto;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #183B56;
+  margin-bottom: 32px;
+}
+
+.footer-links__items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links__item {
+  margin-bottom: 23px;
+}
+
+.footer-links__link {
+  text-decoration: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #183B56;
+}
+
+.footer-links__more {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+}
+
+.footer-links__company {
+  -ms-flex-preferred-size: 11%;
+      flex-basis: 11%;
+}
+
+.footer-bottom-wrapper {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.footer-bottom__text {
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #183B56;
+}
 /*# sourceMappingURL=style.css.map */
