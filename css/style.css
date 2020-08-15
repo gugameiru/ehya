@@ -1276,6 +1276,11 @@ template {
   background-color: rgba(90, 113, 132, 0.1);
 }
 
+.footer__icon-background:hover {
+  -webkit-box-shadow: 0 0 20px rgba(109, 176, 241, 0.2) inset, 0 0 20px rgba(109, 176, 241, 0.2);
+          box-shadow: 0 0 20px rgba(109, 176, 241, 0.2) inset, 0 0 20px rgba(109, 176, 241, 0.2);
+}
+
 .footer-links__title {
   margin: auto;
   font-family: Open Sans;
@@ -1295,6 +1300,11 @@ template {
 
 .footer-links__item {
   margin-bottom: 23px;
+}
+
+.footer-links__item:hover {
+  -webkit-box-shadow: 0 0 20px rgba(109, 176, 241, 0.2) inset, 0 0 20px rgba(109, 176, 241, 0.2);
+          box-shadow: 0 0 20px rgba(109, 176, 241, 0.2) inset, 0 0 20px rgba(109, 176, 241, 0.2);
 }
 
 .footer-links__link {
