@@ -32,6 +32,12 @@
   margin: auto;
 }
 
+.invalid {
+  color: #f10739;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -422,6 +428,7 @@ template {
   line-height: 22px;
   color: #183B56;
   margin-right: 40px;
+  outline-width: 0;
 }
 
 .header-navigation__link:hover {
@@ -527,6 +534,7 @@ template {
   color: #ffffff;
   border-radius: 8px;
   cursor: pointer;
+  outline-width: 0;
 }
 
 .hero-content__button:hover {
@@ -542,6 +550,7 @@ template {
 
 .hero-icon__link {
   text-decoration: none;
+  outline-width: 0;
 }
 
 .hero-icon__link:hover {
@@ -656,6 +665,7 @@ template {
   font-size: 18px;
   line-height: 25px;
   color: #1565D8;
+  outline-width: 0;
 }
 
 .collection__link:hover {
@@ -718,6 +728,7 @@ template {
   line-height: 25px;
   color: #5A7184;
   cursor: pointer;
+  outline-width: 0;
 }
 
 .trending-links__item--selected {
@@ -758,6 +769,7 @@ template {
   height: 350px;
   position: relative;
   cursor: pointer;
+  outline-width: 0;
 }
 
 .trending__card--empty:hover {
@@ -809,6 +821,7 @@ template {
   border-radius: 8px;
   overflow: hidden;
   position: relative;
+  outline-width: 0;
 }
 
 .trending__card-image__wrapper:hover {
@@ -869,6 +882,7 @@ template {
   line-height: 32px;
   letter-spacing: 0.2px;
   color: #183B56;
+  outline-width: 0;
 }
 
 .trending__card-title:hover {
@@ -878,6 +892,7 @@ template {
 
 .trending__card-title-link {
   text-decoration: none;
+  outline-width: 0;
 }
 
 .trending__card-title-link:hover {
@@ -909,6 +924,7 @@ template {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  outline-width: 0;
 }
 
 .trending__card-button:hover {
@@ -1057,6 +1073,7 @@ template {
   border-radius: 50%;
   margin-right: 20px;
   cursor: pointer;
+  outline-width: 0;
 }
 
 .stories-description__button--prev:hover {
@@ -1072,6 +1089,7 @@ template {
   border-radius: 50%;
   margin-right: 20px;
   cursor: pointer;
+  outline-width: 0;
 }
 
 .stories-description__button--next:hover {
@@ -1151,6 +1169,7 @@ template {
   line-height: 22px;
   text-decoration: none;
   color: #1565D8;
+  outline-width: 0;
 }
 
 .stories-picture__link:hover {
@@ -1253,11 +1272,12 @@ template {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  margin-left: 2px;
 }
 
 .cta-subscribe__input {
   width: 448px;
-  padding: 18px 150px 18px 48px;
+  padding: 16px 150px 16px 48px;
   border-radius: 8px;
   border: 1px solid #C3CAD9;
   font-family: Open Sans;
@@ -1266,6 +1286,18 @@ template {
   font-size: 16px;
   line-height: 22px;
   color: #959EAD;
+  outline-width: 0;
+}
+
+.cta-subscribe label {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .cta-subscribe__icon {
@@ -1276,8 +1308,8 @@ template {
 
 .cta-subscribe__button {
   position: absolute;
-  padding: 12px 26px;
-  top: 6px;
+  padding: 12px 28px;
+  top: 4px;
   right: 4px;
   border-radius: 4px;
   border: none;
@@ -1289,11 +1321,17 @@ template {
   font-size: 18px;
   line-height: 25px;
   cursor: pointer;
+  outline-width: 0;
 }
 
 .cta-subscribe__button:hover {
   -webkit-box-shadow: 0 0 20px rgba(158, 197, 236, 0.3) inset, 0 0 20px rgba(158, 197, 236, 0.3);
           box-shadow: 0 0 20px rgba(158, 197, 236, 0.3) inset, 0 0 20px rgba(158, 197, 236, 0.3);
+}
+
+.thankyou {
+  top: 50%;
+  right: 15%;
 }
 
 .footer-wrapper {
@@ -1353,6 +1391,7 @@ template {
   margin-right: 8px;
   border-radius: 50%;
   background-color: rgba(90, 113, 132, 0.1);
+  outline-width: 0;
 }
 
 .footer__icon-background:hover {
@@ -1379,6 +1418,7 @@ template {
 
 .footer-links__item {
   margin-bottom: 23px;
+  outline-width: 0;
 }
 
 .footer-links__item:hover {

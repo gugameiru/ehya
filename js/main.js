@@ -63,3 +63,20 @@ $(document).ready(function () {
     $(this).addClass("trending-links__item--selected");
   });
 });
+
+// Обработка формы
+$(".form").each(function () {
+  $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+    },
+  });
+});
+
+// Очистка форм при перезагрузке страницы
+$("form").find("input").val("");
+$("form").find("textarea").val("");
