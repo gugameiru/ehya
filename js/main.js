@@ -37,10 +37,10 @@ var mySwiper2 = new Swiper(".stories__swiper-container", {
 // Подключение управления Swiper Slider-ом секции Stories
 
 var prevStoriesButton = document.querySelector(
-  ".stories-description__button--prev"
+  ".stories__description-button__prev"
 );
 var nextStoriesButton = document.querySelector(
-  ".stories-description__button--next"
+  ".stories__description-button__next"
 );
 prevStoriesButton.addEventListener("click", () => {
   mySwiper2.slidePrev();

@@ -1,13 +1,13 @@
 .stories
-  &-wrapper
+  &__wrapper
     padding-top: 130px 
     display: flex
     justify-content: space-between
-  &-description
-    &__wrapper
+  &__description
+    &-wrapper
       flex-basis: 40%
       margin-left: -5px
-    &__hashtag
+    &-hashtag
       width: 90px
       padding: 6px 16px
       border-radius: 2000px
@@ -15,7 +15,7 @@
       margin-bottom: 26px
       margin-top: -10px
       text-align: center
-      &--text
+      &__text
         font-family: Open Sans
         font-style: normal
         font-weight: 600
@@ -23,7 +23,7 @@
         line-height: 20px
         text-transform: uppercase
         color: rgba(54, 179, 126, 1)
-    &__title
+    &-title
       font-family: HKGrotesk
       font-style: normal
       font-weight: bold
@@ -33,7 +33,7 @@
       color: $font-color
       margin: 0
       margin-bottom: 26px
-    &__text
+    &-text
       max-width: 400px
       font-family: Open Sans
       font-style: normal
@@ -42,10 +42,10 @@
       line-height: 36px
       color: $hero-text-color
       margin-bottom: 48px
-    &__button
-      &-wrapper
+    &-button
+      &__wrapper
         display: flex
-      &--prev
+      &__prev
         position: relative
         width: 56px
         height: 56px
@@ -56,7 +56,7 @@
         outline-width: 0
         &:hover
           box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
-      &--next
+      &__next
         position: relative
         width: 56px
         height: 56px
@@ -68,12 +68,12 @@
         &:hover
           box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
       &-image
-        &--prev
+        &__prev
           position: absolute
           top: 36%
           left: 40%
           transform: rotate(180deg)
-        &--next
+        &__next
           position: absolute
           top: 36%
           left: 40%
@@ -86,13 +86,13 @@
     &-slide
       display: flex
       justify-content: flex-end
-  &-picture
-    &__wrapper
+  &__picture
+    &-wrapper
       position: relative
       margin-left: 28px
       &:last-child
         margin-right: 5px
-    &__title
+    &-title
       margin: 0
       font-family: HKGrotesk
       font-style: normal
@@ -110,7 +110,7 @@
         top: 296px
         left: 10px
         background-color: $block-color
-    &__link
+    &-link
       font-family: Open Sans
       font-style: normal
       font-weight: 600

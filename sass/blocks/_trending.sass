@@ -2,6 +2,10 @@
   & > .container
     max-width: 1130px
   padding-top: 26px
+  &__title
+    &-wrapper
+      display: flex
+      justify-content: space-between
   &-title
     font-family: HKGrotesk
     font-style: normal
@@ -11,9 +15,6 @@
     letter-spacing: 0.2px
     color: $font-color
     margin-top: 0
-    &__wrapper
-      display: flex
-      justify-content: space-between
   &-links
     margin: 0
     margin-top: 16px
@@ -57,6 +58,7 @@
       outline-width: 0
       &:hover
         box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
+    &-empty
       &__wrapper
         position: absolute
         display: flex
@@ -74,11 +76,11 @@
         text-align: center
         letter-spacing: 0.2px
         color: $white
+      &__image
+        margin-bottom: 6px
     &-image
       object-fit: cover
-      position: absolute
-      &--empty
-        margin-bottom: 6px
+      position: absolute        
       &__wrapper
         height: 350px
         border-radius: 8px
