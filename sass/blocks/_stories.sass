@@ -1,4 +1,6 @@
 .stories
+  & > .container
+    width: 1155px
   &__wrapper
     padding-top: 130px 
     display: flex
@@ -6,7 +8,6 @@
   &__description
     &-wrapper
       flex-basis: 40%
-      margin-left: -5px
     &-hashtag
       width: 90px
       padding: 6px 16px
@@ -79,13 +80,15 @@
           left: 40%
   &__swiper
     &-container
-      flex-basis: 60%
+      flex-basis: 65%
       height: 500px
+
     &-wrapper
       height: 100%
     &-slide
       display: flex
       justify-content: flex-end
+      padding-right: 10px
   &__picture
     &-wrapper
       position: relative
@@ -131,6 +134,8 @@
         border-radius: 8px 8px 0px 0px
         overflow: hidden
         position: relative
+.low-opacity
+  opacity: 60%
       
 
 
