@@ -3,9 +3,9 @@ var mySwiper = new Swiper(".testimonial__swiper-container", {
 	// Optional parameters
 	direction: "horizontal",
 	loop: true,
-	autoplay: {
-		delay: 7000,
-	},
+	// autoplay: {
+	// 	delay: 7000,
+	// },
 
 	// If we need pagination
 	pagination: {
@@ -13,13 +13,13 @@ var mySwiper = new Swiper(".testimonial__swiper-container", {
 	},
 });
 // Отключение автоперелистывания Swiper-slider Testimonial при наведении мышкой
-var swiperContainer = document.querySelector(".testimonial__swiper-container");
-swiperContainer.addEventListener("mouseenter", () => {
-	mySwiper.autoplay.stop();
-});
-swiperContainer.addEventListener("mouseleave", () => {
-	mySwiper.autoplay.start();
-});
+// var swiperContainer = document.querySelector(".testimonial__swiper-container");
+// swiperContainer.addEventListener("mouseenter", () => {
+// 	mySwiper.autoplay.stop();
+// });
+// swiperContainer.addEventListener("mouseleave", () => {
+// 	mySwiper.autoplay.start();
+// });
 
 // Подключение Swiper Slider к секции Stories
 
