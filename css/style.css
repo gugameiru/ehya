@@ -436,6 +436,11 @@ template {
           box-shadow: 0 0 20px rgba(109, 176, 241, 0.2) inset, 0 0 20px rgba(109, 176, 241, 0.2);
 }
 
+.header-menu-button {
+  display: none;
+  outline-width: 0;
+}
+
 .header__button {
   display: inline-block;
   padding: 11px 24px;
@@ -1495,5 +1500,84 @@ template {
   background-color: #1576D8;
   position: relative;
   margin-bottom: 22px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 728px;
+  }
+  .header > .container {
+    width: 650px;
+  }
+  .header-wrapper {
+    padding: 16px 0;
+    margin-bottom: 28px;
+  }
+  .header-navigation {
+    display: none;
+  }
+  .header-menu-button {
+    width: 22px;
+    height: 18px;
+    padding: 0;
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .header-menu-button__line {
+    width: 22px;
+    height: 2px;
+    background-color: #3A4C66;
+  }
+  .hero__wrapper {
+    height: 624px;
+    background-position: 0 -400px;
+    packground-size: 700px;
+  }
+  .hero__gradient {
+    left: 0;
+  }
+  .hero__content-wrapper {
+    padding: 36px 28px;
+  }
+  .hero__content-title {
+    font-family: HKGrotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.2px;
+    margin-bottom: 22px;
+  }
+  .hero__content-text {
+    width: 400px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 36px;
+  }
+  .hero__content-button {
+    margin-bottom: 36px;
+  }
+  .hero__icon-item {
+    margin-right: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

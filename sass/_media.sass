@@ -1,1 +1,63 @@
 @media (max-width: 768px)
+  .container
+    width: 728px
+  .header
+    & > .container
+      width: 650px
+    &-wrapper
+      padding: 16px 0
+      margin-bottom: 28px
+    &-navigation
+      display: none
+    &-menu
+      &-button
+        width: 22px
+        height: 18px
+        padding: 0
+        align-self: center
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: space-between
+        border: none
+        background-color: $white
+        cursor: pointer
+        &__line
+          width: 22px
+          height: 2px
+          background-color: $header-menu-button-color
+  .hero
+    &__wrapper
+      height: 624px
+      background-position: 0 -400px
+      packground-size: 700px
+    &__gradient
+      left: 0
+    &__content
+      &-wrapper
+        padding: 36px 28px
+      &-title
+        font-family: HKGrotesk
+        font-style: normal
+        font-weight: bold
+        font-size: 48px
+        line-height: 60px
+        letter-spacing: 0.2px
+        margin-bottom: 22px
+      &-text
+        width: 400px
+        font-family: Open Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 32px
+        margin-bottom: 36px
+      &-button
+        margin-bottom: 36px
+    &__icon
+      &-item
+        margin-right: 20px
+
+
+
+
