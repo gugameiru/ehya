@@ -1579,5 +1579,30 @@ template {
   .hero__icon-item {
     margin-right: 20px;
   }
+  .collection {
+    padding: 80px 0;
+  }
+  .collection > .container {
+    width: 672px;
+  }
+  .collection__wrapper {
+    -ms-grid-rows: 3;
+    -ms-grid-columns: 2;
+        grid-template: 3 / 2;
+  }
+  .collection__content-wrapper {
+    padding: 0;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  .collection__title {
+    margin-bottom: 20px;
+  }
+  .collection__text {
+    margin-bottom: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
