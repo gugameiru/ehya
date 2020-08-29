@@ -454,11 +454,11 @@
         width: 512px
         border: 100px solid $circle-color
       &:before
-        right: -184%
-        top: 10%
+        right: -180%
+        top: 20%
       &:after
-        left: -184% 
-        top: -104%   
+        left: -180% 
+        top: -94%   
     &-description
       margin-bottom: 36px
       &__title
@@ -480,6 +480,49 @@
         top: 58px
         border-radius: 8px
         left: 0
+  .footer
+    & > .container
+      width: 272px
+    &-wrapper
+      padding: 48px 0
+      justify-content: flex-start
+    &__first
+      &-column
+        &-wrapper
+          order: 5
+          text-align: center
+          flex-basis: 100%
+          padding: 10px 10px
+        &-text
+          margin-top: 10px
+          margin-bottom: 20px
+          font-size: 14px
+          line-height: 24px
+        &__icon
+          &-wrapper
+            width: 75%
+            margin-left: auto
+            margin-right: auto
+    &-logo
+      margin-bottom: 0
+    &-bottom
+      display: none
+    &-links
+      padding: 0
+      flex-basis: 45%
+      &__title
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 20px
+      &__link
+        font-size: 14px
+        line-height: 20px
+      &__item
+        margin-bottom: 16px
+        &:last-child
+          margin-bottom: 34px
+      &__services, &__more
+        padding-left: 24px
 
 
 
