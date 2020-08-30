@@ -1,6 +1,7 @@
 .stories
   & > .container
-    width: 1155px
+    max-width: 1195px
+    padding: 0 20px
   &__wrapper
     padding-top: 130px 
     display: flex
@@ -34,7 +35,7 @@
       color: $font-color
       margin: 0
       margin-bottom: 26px
-      &--adaptive728
+      &--adaptive
         display: none
     &-text
       max-width: 400px
@@ -84,13 +85,15 @@
     &-container
       flex-basis: 65%
       height: 500px
-
     &-wrapper
       height: 100%
     &-slide
       display: flex
       justify-content: flex-end
       padding-right: 10px
+      opacity: 0
+      visibility: hidden
+      transition: opacity 0.3s visibility 0s
   &__picture
     &-wrapper
       position: relative
@@ -138,6 +141,14 @@
         position: relative
 .low-opacity
   opacity: 60%
+.swiper
+  &-slide
+    &-active
+      opacity: 1
+      visibility: visible
+      transition: opacity 0.3s visibility 0s
+
+
       
 
 

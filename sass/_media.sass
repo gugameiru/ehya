@@ -1,3 +1,106 @@
+@media (max-width: 1024px)
+  .hero
+    &__wrapper
+      background-position: 200px -376px
+    &__gradient
+      left: 200px
+  .collection
+    padding: 80px 0 50px 0
+    & > .container
+      width: 672px
+    &__wrapper
+      grid-template: 3 / 2
+    &__content
+      &-wrapper
+        padding: 0
+        grid-row: 3
+        grid-column: 1 / span 2
+    &__title
+      margin-bottom: 20px
+    &__text
+      margin-bottom: 30px
+  .stories
+    & > .container
+      width: 730px
+    &__wrapper
+      padding-top: 80px
+      flex-direction: column
+      align-items: center
+      margin-bottom: 56px
+    &__description
+      &-wrapper
+        text-align: center
+        flex-basis: 100%
+      &-hashtag
+        margin: 0 auto 22px auto
+      &-title
+        display: none
+        &--adaptive
+          display: block
+          margin-bottom: 20px
+      &-text
+        max-width: 70%
+        margin-right: auto
+        margin-left: auto
+        margin-bottom: 34px
+      &-button
+        &__wrapper
+          justify-content: center
+          padding-left: 16px
+          margin-bottom: 34px
+    &__swiper
+      &-container
+        flex-basis: auto
+      &-slide
+        justify-content: flex-start
+    &__picture
+      &-image
+        &__wrapper
+          width: 318px
+  .cta
+    & > .container
+      width: 100%
+      text-align: center
+    &-wrapper
+      margin-top: 0
+      padding: 72px 60px 80px 60px
+      flex-direction: column
+      &::before
+        right: -100%
+        top: 72%
+      &::after
+        left: -85%
+        top: -214%
+    &-description
+      margin-bottom: 56px
+    &-subscribe
+      z-index: 10
+      &__icon
+        top: 23px
+  .thankyou
+    z-index: 10
+    top: 70%
+    right: 50%
+    transform: translateX(50%)
+  .footer
+    &-wrapper
+      padding: 66px 40px
+      justify-content: flex-end
+      padding-bottom: 0
+    &__first
+      &-column
+        &-wrapper
+          flex-basis: 40%
+          flex-shrink: 0
+    &-links
+      flex-basis: 30%
+      padding-left: 20px
+      padding-bottom: 26px
+    &-bottom
+      margin-top: 14px
+      &__image
+        &-background
+          margin-bottom: 22px
 @media (max-width: 768px)
   .container
     width: 728px
@@ -58,21 +161,6 @@
     &__icon
       &-item
         margin-right: 20px
-  .collection
-    padding: 80px 0 50px 0
-    & > .container
-      width: 672px
-    &__wrapper
-      grid-template: 3 / 2
-    &__content
-      &-wrapper
-        padding: 0
-        grid-row: 3
-        grid-column: 1 / span 2
-    &__title
-      margin-bottom: 20px
-    &__text
-      margin-bottom: 30px
   .trending
     &__title
       &-wrapper
@@ -103,83 +191,8 @@
     &-pagination
       position: static
       padding: 0
-  .stories
-    & > .container
-      width: 730px
-    &__wrapper
-      padding-top: 80px
-      flex-direction: column
-      align-items: center
-      margin-bottom: 56px
-    &__description
-      &-wrapper
-        text-align: center
-        flex-basis: 100%
-      &-hashtag
-        margin: 0 auto 22px auto
-      &-title
-        display: none
-        &--adaptive
-          display: block
-          margin-bottom: 20px
-      &-text
-        max-width: 70%
-        margin-right: auto
-        margin-left: auto
-        margin-bottom: 34px
-      &-button
-        &__wrapper
-          justify-content: center
-          padding-left: 16px
-          margin-bottom: 34px
-    &__swiper
-      &-container
-        flex-basis: auto
-      &-slide
-        justify-content: flex-start
-    &__picture
-      &-image
-        &__wrapper
-          width: 318px
-  .cta
-    & > .container
-      width: 100%
-      text-align: center
-    &-wrapper
-      margin-top: 0
-      padding: 72px 60px 80px 60px
-      flex-direction: column
-      &::before
-        right: -100%
-        top: 72%
-      &::after
-        left: -85%
-        top: -214%
-    &-description
-      margin-bottom: 56px
-    &-subscribe
-      z-index: 10
-      &__icon
-        top: 23px
-  .footer
-    &-wrapper
-      padding: 66px 40px
-      justify-content: flex-end
-      padding-bottom: 0
-    &__first
-      &-column
-        &-wrapper
-          flex-basis: 40%
-          flex-shrink: 0
-    &-links
-      flex-basis: 30%
-      padding-left: 20px
-      padding-bottom: 26px
-    &-bottom
-      margin-top: 14px
-      &__image
-        &-background
-          margin-bottom: 22px
+  
+  
 @media screen and ( max-width: 320px )
   .container
     width: 300px
@@ -480,6 +493,18 @@
         top: 58px
         border-radius: 8px
         left: 0
+      &-button
+        width: 100%
+        top: 58px
+        border-radius: 8px
+        left: 0
+  .thankyou
+    width: 80%
+    padding: 10px 0
+    z-index: 10
+    top: 60%
+    right: 50%
+    transform: translateX(12%)
   .footer
     & > .container
       width: 272px

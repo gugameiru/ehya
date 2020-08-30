@@ -42,8 +42,10 @@ var prevStoriesButton = document.querySelector(
 var nextStoriesButton = document.querySelector(
 	".stories__description-button__next"
 );
+
 prevStoriesButton.addEventListener("click", () => {
 	mySwiper2.slidePrev();
+
 	if (mySwiper2.isBeginning == true) {
 		$(prevStoriesButton).addClass("low-opacity");
 		$(nextStoriesButton).removeClass("low-opacity");
