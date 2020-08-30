@@ -217,7 +217,7 @@
 @media screen and ( max-width: 600px )
   .footer
     & > .container
-      max-width: 6000px
+      max-width: 600px
       padding: 0 20px
     &-wrapper
       padding: 48px 0
@@ -310,6 +310,53 @@
       &-image
         height: 24px
         width: 24px
+  .cta
+    &-wrapper
+      padding: 64px 20px
+      padding-bottom: 120px
+      &:before, &:after
+        height: 512px
+        width: 512px
+        border: 100px solid $circle-color
+      &:before
+        right: -180%
+        top: 20%
+      &:after
+        left: -180% 
+        top: -94%   
+    &-description
+      margin-bottom: 36px
+      &__title
+        font-size: 28px
+        line-height: 36px
+        letter-spacing: 0.2px
+        margin-bottom: 24px
+      &__text
+        font-size: 16px
+        line-height: 28px
+    &-subscribe
+      &__input
+        width: 100%
+        padding: 12px 48px
+      &__icon
+        top: 18px
+      &__button
+        width: 100%
+        top: 58px
+        border-radius: 8px
+        left: 0
+      &-button
+        width: 100%
+        top: 58px
+        border-radius: 8px
+        left: 0
+  .thankyou
+    width: 80%
+    padding: 10px 0
+    z-index: 10
+    top: 60%
+    right: 50%
+    transform: translateX(12%)
 @media screen and ( max-width: 420px )
   .collection
     padding-top: 64px
@@ -357,6 +404,12 @@
       font-size: 16px
       line-height: 22px
       text-align: center
+  .footer
+    &__first
+      &-column
+        &__icon
+          &-wrapper
+            width: 50%
 @media screen and ( max-width: 320px )
   .container
     width: 300px
@@ -492,6 +545,7 @@
   .stories
     & > .container
       width: 280px
+      padding: 0
     &__wrapper
       padding-top: 44px
     &__description
@@ -548,53 +602,16 @@
       &-link
         font-size: 16px
         line-height: 22px
-  .cta
-    &-wrapper
-      padding: 64px 20px
-      padding-bottom: 120px
-      &:before, &:after
-        height: 512px
-        width: 512px
-        border: 100px solid $circle-color
-      &:before
-        right: -180%
-        top: 20%
-      &:after
-        left: -180% 
-        top: -94%   
-    &-description
-      margin-bottom: 36px
-      &__title
-        font-size: 28px
-        line-height: 36px
-        letter-spacing: 0.2px
-        margin-bottom: 24px
-      &__text
-        font-size: 16px
-        line-height: 28px
-    &-subscribe
-      &__input
-        width: 100%
-        padding: 12px 48px
-      &__icon
-        top: 18px
-      &__button
-        width: 100%
-        top: 58px
-        border-radius: 8px
-        left: 0
-      &-button
-        width: 100%
-        top: 58px
-        border-radius: 8px
-        left: 0
-  .thankyou
-    width: 80%
-    padding: 10px 0
-    z-index: 10
-    top: 60%
-    right: 50%
-    transform: translateX(12%)
+  .footer
+    & > .container
+      width: 272px
+      padding: 0
+    &__first
+      &-column
+        &__icon
+          &-wrapper
+            width: 75%
+  
   
 
 

@@ -1019,6 +1019,10 @@ template {
   background: #183B56;
 }
 
+.stories {
+  display: none;
+}
+
 .stories > .container {
   max-width: 1195px;
   padding: 0 20px;
@@ -1236,10 +1240,10 @@ template {
 
 .cta > .container {
   max-width: 1440px;
-  background-color: #1565D8;
 }
 
 .cta-wrapper {
+  background-color: #1565D8;
   margin-top: 114px;
   padding: 100px 10.5%;
   display: -webkit-box;
@@ -1869,7 +1873,7 @@ template {
 
 @media screen and (max-width: 600px) {
   .footer > .container {
-    max-width: 6000px;
+    max-width: 600px;
     padding: 0 20px;
   }
   .footer-wrapper {
@@ -1993,6 +1997,64 @@ template {
     height: 24px;
     width: 24px;
   }
+  .cta-wrapper {
+    padding: 64px 20px;
+    padding-bottom: 120px;
+  }
+  .cta-wrapper:before, .cta-wrapper:after {
+    height: 512px;
+    width: 512px;
+    border: 100px solid rgba(245, 229, 229, 0.1);
+  }
+  .cta-wrapper:before {
+    right: -180%;
+    top: 20%;
+  }
+  .cta-wrapper:after {
+    left: -180%;
+    top: -94%;
+  }
+  .cta-description {
+    margin-bottom: 36px;
+  }
+  .cta-description__title {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.2px;
+    margin-bottom: 24px;
+  }
+  .cta-description__text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .cta-subscribe__input {
+    width: 100%;
+    padding: 12px 48px;
+  }
+  .cta-subscribe__icon {
+    top: 18px;
+  }
+  .cta-subscribe__button {
+    width: 100%;
+    top: 58px;
+    border-radius: 8px;
+    left: 0;
+  }
+  .cta-subscribe-button {
+    width: 100%;
+    top: 58px;
+    border-radius: 8px;
+    left: 0;
+  }
+  .thankyou {
+    width: 80%;
+    padding: 10px 0;
+    z-index: 10;
+    top: 60%;
+    right: 50%;
+    -webkit-transform: translateX(12%);
+            transform: translateX(12%);
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -2060,6 +2122,9 @@ template {
     font-size: 16px;
     line-height: 22px;
     text-align: center;
+  }
+  .footer__first-column__icon-wrapper {
+    width: 50%;
   }
 }
 
@@ -2229,6 +2294,7 @@ template {
   }
   .stories > .container {
     width: 280px;
+    padding: 0;
   }
   .stories__wrapper {
     padding-top: 44px;
@@ -2299,63 +2365,12 @@ template {
     font-size: 16px;
     line-height: 22px;
   }
-  .cta-wrapper {
-    padding: 64px 20px;
-    padding-bottom: 120px;
+  .footer > .container {
+    width: 272px;
+    padding: 0;
   }
-  .cta-wrapper:before, .cta-wrapper:after {
-    height: 512px;
-    width: 512px;
-    border: 100px solid rgba(245, 229, 229, 0.1);
-  }
-  .cta-wrapper:before {
-    right: -180%;
-    top: 20%;
-  }
-  .cta-wrapper:after {
-    left: -180%;
-    top: -94%;
-  }
-  .cta-description {
-    margin-bottom: 36px;
-  }
-  .cta-description__title {
-    font-size: 28px;
-    line-height: 36px;
-    letter-spacing: 0.2px;
-    margin-bottom: 24px;
-  }
-  .cta-description__text {
-    font-size: 16px;
-    line-height: 28px;
-  }
-  .cta-subscribe__input {
-    width: 100%;
-    padding: 12px 48px;
-  }
-  .cta-subscribe__icon {
-    top: 18px;
-  }
-  .cta-subscribe__button {
-    width: 100%;
-    top: 58px;
-    border-radius: 8px;
-    left: 0;
-  }
-  .cta-subscribe-button {
-    width: 100%;
-    top: 58px;
-    border-radius: 8px;
-    left: 0;
-  }
-  .thankyou {
-    width: 80%;
-    padding: 10px 0;
-    z-index: 10;
-    top: 60%;
-    right: 50%;
-    -webkit-transform: translateX(12%);
-            transform: translateX(12%);
+  .footer__first-column__icon-wrapper {
+    width: 75%;
   }
 }
 /*# sourceMappingURL=style.css.map */
