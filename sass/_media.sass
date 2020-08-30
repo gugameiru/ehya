@@ -7,9 +7,11 @@
   .collection
     padding: 80px 0 50px 0
     & > .container
-      width: 672px
+      max-width: 692px
+      padding: 0 10px
     &__wrapper
-      grid-template: 3 / 2
+      grid-template: 3 / 2 
+      grid-template-columns: 1fr 1fr     
     &__content
       &-wrapper
         padding: 0
@@ -19,6 +21,22 @@
       margin-bottom: 20px
     &__text
       margin-bottom: 30px
+    &__item
+      width: auto
+      max-width: 100%
+      &--001
+        height: auto
+        min-height: 490px
+      &--002
+        height: auto
+        max-height: 230px
+        width: 100%
+        max-width: 320px
+      &--003
+        height: auto
+        max-height: 230px
+        width: 100%
+        max-width: 320px
   .stories
     & > .container
       width: 730px
@@ -39,7 +57,7 @@
           display: block
           margin-bottom: 20px
       &-text
-        max-width: 70%
+        max-width: 72%
         margin-right: auto
         margin-left: auto
         margin-bottom: 34px
@@ -103,11 +121,12 @@
           margin-bottom: 22px
 @media (max-width: 768px)
   .container
-    width: 728px
+    max-width: 728px
     overflow: hidden
   .header
     & > .container
-      width: 650px
+      max-width: 670px
+      padding: 0 10px
     &-wrapper
       padding: 16px 0
       margin-bottom: 28px
@@ -131,6 +150,9 @@
           height: 2px
           background-color: $header-menu-button-color
   .hero
+    & > .container
+      max-width: 748px
+      padding: 0 10px
     &__wrapper
       height: 624px
       background-position: 0 -400px
@@ -170,6 +192,7 @@
         margin-bottom: 48px
     &-title
       margin-bottom: 28px
+      text-align: center
     &-links
       margin-top: 0
       padding-left: 0
@@ -184,29 +207,62 @@
       padding-top: 40px
       height: 524px
     &-text
-      padding: 0 40px
+      padding: 0 7%
     &-signature
       margin-top: 20px
   .swiper
     &-pagination
       position: static
       padding: 0
-  
-  
-@media screen and ( max-width: 320px )
-  .container
-    width: 300px
-  .header
+@media screen and ( max-width: 600px )
+  .footer
     & > .container
-      width: 300px
+      max-width: 6000px
+      padding: 0 20px
     &-wrapper
-      padding: 8px 14px
+      padding: 48px 0
+      justify-content: flex-start
+    &__first
+      &-column
+        &-wrapper
+          order: 5
+          text-align: center
+          flex-basis: 100%
+          padding: 10px 10px
+        &-text
+          margin-top: 10px
+          margin-bottom: 20px
+          font-size: 14px
+          line-height: 24px
+        &__icon
+          &-wrapper
+            width: 40%
+            margin-left: auto
+            margin-right: auto
+    &-logo
+      margin-bottom: 0
+    &-bottom
+      display: none
+    &-links
+      padding: 0
+      flex-basis: 45%
+      &__title
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 20px
+      &__link
+        font-size: 14px
+        line-height: 20px
+      &__item
+        margin-bottom: 16px
+        &:last-child
+          margin-bottom: 34px
+      &__services, &__more
+        padding-left: 24px
+@media screen and ( max-width: 560px )
   .hero
-    & > .container
-      width: 320px
-      border-radius: 0
     &__wrapper
-      background-position: -410px -380px
+      background-position: -310px -380px
       text-align: center
       padding: 0
       height: auto
@@ -254,10 +310,12 @@
       &-image
         height: 24px
         width: 24px
+@media screen and ( max-width: 420px )
   .collection
     padding-top: 64px
     & > .container
-      width: 290px
+      max-width: 420px
+      padding: 0 10px
     &__wrapper
       grid-gap: 14px
     &__item
@@ -265,8 +323,11 @@
       width: 100%
       object-fit: cover
       &--001
-        height: 300px
+        height: auto
+        min-height: auto
+        max-height: 100%
         width: 100%
+        max-width: 420px
         object-fit: cover
         grid-row: 1
         grid-column: 1 / span 2
@@ -282,6 +343,7 @@
       margin-bottom: 18px
       font-size: 28px
       line-height: 36px
+      text-align: center
     &__text
       font-size: 16px
       line-height: 28px
@@ -295,10 +357,38 @@
       font-size: 16px
       line-height: 22px
       text-align: center
+@media screen and ( max-width: 320px )
+  .container
+    width: 300px
+  .header
+    & > .container
+      width: 300px
+      padding: 0
+    &-wrapper
+      padding: 8px 14px
+  .hero
+    & > .container
+      width: 320px
+      padding: 0
+      border-radius: 0
+    &__wrapper
+      background-position: -410px -380px
+      border-radius: 0
+  .collection
+    & > .container
+      max-width: 290px
+      padding: 0
+    &__wrapper
+      grid-template-rows: auto auto auto
+    &__item
+      &--001
+        height: 300px
+        max-height: 300px
   .trending
     padding-top: 10px
     & > .container
       width: 290px
+      padding: 0
     &__wrapper
       justify-content: space-between
     &__title
@@ -505,49 +595,7 @@
     top: 60%
     right: 50%
     transform: translateX(12%)
-  .footer
-    & > .container
-      width: 272px
-    &-wrapper
-      padding: 48px 0
-      justify-content: flex-start
-    &__first
-      &-column
-        &-wrapper
-          order: 5
-          text-align: center
-          flex-basis: 100%
-          padding: 10px 10px
-        &-text
-          margin-top: 10px
-          margin-bottom: 20px
-          font-size: 14px
-          line-height: 24px
-        &__icon
-          &-wrapper
-            width: 75%
-            margin-left: auto
-            margin-right: auto
-    &-logo
-      margin-bottom: 0
-    &-bottom
-      display: none
-    &-links
-      padding: 0
-      flex-basis: 45%
-      &__title
-        font-size: 16px
-        line-height: 22px
-        margin-bottom: 20px
-      &__link
-        font-size: 14px
-        line-height: 20px
-      &__item
-        margin-bottom: 16px
-        &:last-child
-          margin-bottom: 34px
-      &__services, &__more
-        padding-left: 24px
+  
 
 
 
