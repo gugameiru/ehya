@@ -206,7 +206,6 @@
   .testimonial
     & > .container
       padding-top: 40px
-      height: 524px
     &-text
       padding: 0 7%
     &-signature
@@ -215,7 +214,7 @@
     &-pagination
       position: static
       padding: 0
-@media screen and ( max-width: 740px )
+@media ( max-width: 740px )
   .stories
     & > .container
       max-width: 740px
@@ -278,7 +277,7 @@
       &-link
         font-size: 16px
         line-height: 22px
-@media screen and ( max-width: 600px )
+@media ( max-width: 600px )
   .stories
     &__swiper
       &-slide
@@ -327,7 +326,7 @@
           margin-bottom: 34px
       &__services, &__more
         padding-left: 24px
-@media screen and ( max-width: 560px )
+@media ( max-width: 560px )
   .hero
     &__wrapper
       background-position: -310px -380px
@@ -429,7 +428,7 @@
     &__swiper
       &-slide
         padding-left: 0.4%
-@media screen and ( max-width: 420px )
+@media ( max-width: 420px )
   .collection
     padding-top: 64px
     & > .container
@@ -476,6 +475,21 @@
       font-size: 16px
       line-height: 22px
       text-align: center
+  .testimonial
+    &-text
+      padding: 0
+      margin: 20px 0
+      margin-bottom: 16px
+      font-size: 18px
+      line-height: 36px
+      text-align: center
+      letter-spacing: 0.12px
+    &-signature
+      display: none
+      margin-top: 10px
+      &-res320p
+        display: block
+        margin-top: 10px
   .stories
     & > .container
       max-width: 740px
@@ -544,7 +558,7 @@
         &__icon
           &-wrapper
             width: 50%
-@media screen and ( max-width: 320px )
+@media ( max-width: 320px )
   .container
     width: 300px
   .header
@@ -600,29 +614,6 @@
       &-image
         &__wrapper
           height: 170px
-        &--001
-          height: 105%
-        &--002
-          width: 170%
-          top: -10%
-          left: -28%
-        &--003
-          width: 120%
-          left: -8%
-        &--004
-          width: 120%
-          top: -28%
-          left: -10%
-        &--005
-          width: 105%
-          top: -8%
-          left: -6%
-        &--006
-          width: 180%
-          left: -35%
-        &--007
-          width: 140%
-          left: -20%
       &-title
         margin-left: 0
         margin-top: 12px
@@ -658,20 +649,12 @@
     & > .container
       width: 280px
       padding-top: 38px
-      height: 650px
+      padding-left: 0px
+      padding-right: 0px
+      
     &-title
       &-image
         width: 70px
-    &-text
-      padding: 0
-      margin: 20px 0
-      margin-bottom: 16px
-      font-size: 18px
-      line-height: 36px
-      text-align: center
-      letter-spacing: 0.12px
-    &-signature
-      margin-top: 10px
   .swiper
     &-pagination
       padding: 0
@@ -679,7 +662,6 @@
   .stories
     &__wrapper
       margin-bottom: 0
-  
   .footer
     & > .container
       width: 272px

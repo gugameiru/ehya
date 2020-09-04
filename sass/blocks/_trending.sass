@@ -45,11 +45,13 @@
     flex-wrap: wrap
     justify-content: space-between
     padding-top: 8px
+    margin: 0 -5px
     &--active
       display: flex
   &__card
     width: 260px
     padding-bottom: 50px
+    margin: 0 5px
     text-decoration: none
     &--empty
       background-color: $link-color
@@ -81,43 +83,14 @@
       &__image
         margin-bottom: 6px
     &-image
-      object-fit: cover
-      position: absolute        
+      object-fit: cover      
       &__wrapper
         height: 350px
         border-radius: 8px
         overflow: hidden
-        position: relative
         outline-width: 0
         &:hover
-          box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
-      &--001
-        height: 100%
-      &--002
-        width: 200%
-        top: -12%
-        left: -40%
-      &--003
-        transform: scale(-1, 1)
-        width: 150%
-        top: -12%
-        left: -28% 
-      &--004
-        width: 150%
-        top: -38%
-        left: -27%
-      &--005
-        width: 120%
-        top: -4%
-        left: -9% 
-      &--006
-        width: 220%
-        top: -11%
-        left: -50%
-      &--007
-        width: 200%
-        top: -2%
-        left: -48%                  
+          box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color            
     &-title
       margin-left: 12px
       margin-top: 18px
@@ -146,7 +119,7 @@
       color: $hero-text-color
       &__wrapper
         padding-left: 12px
-        padding-right: 8px
+        
         display: flex
         justify-content: space-between
     &-button
