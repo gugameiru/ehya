@@ -2258,6 +2258,84 @@ template {
     line-height: 22px;
     text-align: center;
   }
+  .trending {
+    padding-top: 10px;
+  }
+  .trending > .container {
+    max-width: 420px;
+    padding: 0 10px;
+  }
+  .trending__wrapper {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .trending__title-wrapper {
+    margin-bottom: 28px;
+  }
+  .trending-title {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin-bottom: 26px;
+  }
+  .trending-links {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .trending-links__item {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+  }
+  .trending__card {
+    width: 140px;
+    padding-bottom: 26px;
+  }
+  .trending__card-image__wrapper {
+    height: 170px;
+  }
+  .trending__card-title {
+    margin-left: 0;
+    margin-top: 12px;
+    margin-bottom: 2px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+  .trending__card-price {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .trending__card-price__wrapper {
+    padding-left: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .trending__card-empty__wrapper {
+    top: 25%;
+  }
+  .trending__card-empty__image {
+    width: 25px;
+  }
+  .trending__card-empty__title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+  }
+  .trending__card--empty {
+    height: 170px;
+  }
+  .trending__shopping-cart-image {
+    height: 14px;
+    width: 14px;
+    margin-top: 6px;
+  }
   .testimonial-text {
     padding: 0;
     margin: 20px 0;
@@ -2400,72 +2478,6 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  .trending__title-wrapper {
-    margin-bottom: 28px;
-  }
-  .trending-title {
-    font-size: 28px;
-    line-height: 36px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    margin-bottom: 26px;
-  }
-  .trending-links {
-    width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .trending-links__item {
-    font-size: 16px;
-    line-height: 22px;
-    margin: 0;
-  }
-  .trending__card {
-    width: 140px;
-    padding-bottom: 26px;
-  }
-  .trending__card-image__wrapper {
-    height: 170px;
-  }
-  .trending__card-title {
-    margin-left: 0;
-    margin-top: 12px;
-    margin-bottom: 2px;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-  }
-  .trending__card-price {
-    font-size: 14px;
-    line-height: 24px;
-  }
-  .trending__card-price__wrapper {
-    padding-left: 0;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .trending__card-empty__wrapper {
-    top: 25%;
-  }
-  .trending__card-empty__image {
-    width: 25px;
-  }
-  .trending__card-empty__title {
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.2px;
-  }
-  .trending__card--empty {
-    height: 170px;
-  }
-  .trending__shopping-cart-image {
-    height: 14px;
-    width: 14px;
-    margin-top: 6px;
   }
   .testimonial > .container {
     width: 280px;
