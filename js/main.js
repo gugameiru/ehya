@@ -1,3 +1,26 @@
+// Появление мобильного меню
+var menuButton = $(".header-menu-button");
+menuButton.on("click", function () {
+	$(".header__mobile-menu-wrapper").addClass(
+		"header__mobile-menu-wrapper--visible"
+	);
+});
+
+// Закрытие мобильного окна
+var closeButton = $(".header__mobile-menu-wrapper__close");
+closeButton.on("click", function () {
+	$(".header__mobile-menu-wrapper").removeClass(
+		"header__mobile-menu-wrapper--visible"
+	);
+});
+
+var closeContainer = $("section");
+closeContainer.on("click", function () {
+	$(".header__mobile-menu-wrapper").removeClass(
+		"header__mobile-menu-wrapper--visible"
+	);
+});
+
 // Подключение Swiper-slider к секции Testimonial
 var mySwiper = new Swiper(".testimonial__swiper-container", {
 	// Optional parameters
@@ -82,7 +105,7 @@ $(document).ready(function () {
 	});
 });
 
-// Обработка формы
+// Обработка формы отправки
 $(".form").each(function () {
 	$(this).validate({
 		errorClass: "invalid",
@@ -98,5 +121,3 @@ $(".form").each(function () {
 // Очистка форм при перезагрузке страницы
 $("form").find("input").val("");
 $("form").find("textarea").val("");
-
-// Обработка кнопок в section Stories

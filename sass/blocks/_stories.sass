@@ -91,9 +91,6 @@
       display: flex
       justify-content: flex-end
       padding-right: 10px
-      opacity: 0
-      visibility: hidden
-      transition: opacity 0.3s visibility 0s
   &__picture
     &-wrapper
       position: relative
@@ -143,11 +140,17 @@
   opacity: 60%
 .swiper
   &-slide
+    opacity: 0
+    
+    &-next
+      opacity: 0
+      transition: opacity 0.3s
     &-active
       opacity: 1
-      visibility: visible
-      transition: opacity 0.3s visibility 0s
-
+      
+    &-prev
+      opacity: 0
+      transition: opacity 0.3s
 
       
 

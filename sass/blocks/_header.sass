@@ -36,6 +36,61 @@
     &-button
       display: none
       outline-width: 0
+  &__mobile
+    &-menu
+      &-wrapper
+        display: none
+        &--visible
+          display: none
+          z-index: 10
+          position: fixed
+          background-color: $white
+          padding: 36px 24px
+          padding-bottom: 16px
+          top: 8px
+          left: 8px
+          right: 8px
+          box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+        &__close
+          position: absolute
+          top: 14px
+          right: 14px
+          border: none
+          background-color: transparent
+          padding: 0
+          cursor: pointer
+          &:hover
+            box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
+          &-image
+            object-fit: cover
+            width: 24px
+      &-navigation
+        padding-left: 0
+        list-style-type: none
+        margin: 0
+        &__item
+          margin-bottom: 20px
+        &__link
+          text-decoration: none
+          font-family: Open Sans
+          font-style: normal
+          font-weight: 600
+          font-size: 16px
+          line-height: 22px
+          color: $font-color
+          margin-right: 40px
+          outline-width: 0
+          &:hover
+            box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
+          &--button
+            width: 100%
+            text-align: center
+            display: inline-block
+            padding: 8px 24px
+            border: 2px solid $link-color
+            border-radius: 8px
+            color: $link-color
+            font-weight: bold
   &__button
     display: inline-block
     padding: 11px 24px
@@ -43,6 +98,10 @@
     border-radius: 8px
     color: $link-color
     font-weight: bold
+
+      
+
+      
 
 
 

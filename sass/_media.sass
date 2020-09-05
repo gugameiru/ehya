@@ -150,6 +150,17 @@
           width: 22px
           height: 2px
           background-color: $header-menu-button-color
+    &__mobile
+      &-menu
+        &-wrapper
+          &--visible
+            display: block
+            padding: 36px 36px
+          &__close
+            top: 24px
+            right: 24px
+            &-image
+              width: 100%
   .hero
     & > .container
       max-width: 748px
@@ -429,6 +440,18 @@
       &-slide
         padding-left: 0.4%
 @media ( max-width: 420px )
+  .header
+    &__mobile
+        &-menu
+          &-wrapper
+            &--visible
+              padding: 36px 24px
+              padding-bottom: 16px
+            &__close
+              top: 14px
+              right: 14px
+              &-image
+                width: 24px
   .collection
     padding-top: 64px
     & > .container
