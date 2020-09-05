@@ -21,6 +21,13 @@ closeContainer.on("click", function () {
 	);
 });
 
+var closeLink = $(".header__mobile-menu-navigation__link");
+closeLink.on("click", function () {
+	$(".header__mobile-menu-wrapper").removeClass(
+		"header__mobile-menu-wrapper--visible"
+	);
+});
+
 // Подключение Swiper-slider к секции Testimonial
 var mySwiper = new Swiper(".testimonial__swiper-container", {
 	// Optional parameters
@@ -49,6 +56,8 @@ swiperContainer.addEventListener("mouseleave", () => {
 var mySwiper2 = new Swiper(".stories__swiper-container", {
 	// Optional parameters
 	direction: "horizontal",
+	spaceBetween: 100,
+	autoHeight: true,
 
 	// Navigation arrows
 	navigation: {

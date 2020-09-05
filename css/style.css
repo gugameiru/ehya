@@ -1265,26 +1265,6 @@ template {
   opacity: 60%;
 }
 
-.swiper-slide {
-  opacity: 0;
-}
-
-.swiper-slide-next {
-  opacity: 0;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-
-.swiper-slide-active {
-  opacity: 1;
-}
-
-.swiper-slide-prev {
-  opacity: 0;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-
 .cta > .container {
   max-width: 1440px;
 }
@@ -2492,6 +2472,7 @@ template {
     padding-top: 38px;
     padding-left: 0px;
     padding-right: 0px;
+    padding-bottom: 36px;
   }
   .testimonial-title-image {
     width: 70px;
@@ -2502,6 +2483,16 @@ template {
   }
   .stories__wrapper {
     margin-bottom: 0;
+    padding-top: 48px;
+  }
+  .stories__description-hashtag {
+    margin-bottom: 24px;
+  }
+  .stories__description-text {
+    max-width: 100%;
+  }
+  .cta > .container {
+    padding-top: 24px;
   }
   .footer > .container {
     width: 272px;
