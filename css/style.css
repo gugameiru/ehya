@@ -1655,7 +1655,7 @@ template {
     padding: 0 10px;
   }
   .stories__wrapper {
-    padding-top: 80px;
+    padding-top: 86px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1898,7 +1898,7 @@ template {
     padding-top: 40px;
   }
   .testimonial-text {
-    padding: 0 7%;
+    padding: 0 4.3%;
   }
   .testimonial-signature {
     margin-top: 20px;

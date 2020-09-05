@@ -33,6 +33,7 @@ var mySwiper = new Swiper(".testimonial__swiper-container", {
 	// Optional parameters
 	direction: "horizontal",
 	loop: true,
+	autoHeight: true,
 	autoplay: {
 		delay: 7000,
 	},
