@@ -41,6 +41,7 @@ var mySwiper = new Swiper(".testimonial__swiper-container", {
 	// If we need pagination
 	pagination: {
 		el: ".swiper-pagination",
+		clickable: true,
 	},
 });
 // Отключение автоперелистывания Swiper-slider Testimonial при наведении мышкой
@@ -61,10 +62,10 @@ var mySwiper2 = new Swiper(".stories__swiper-container", {
 	autoHeight: true,
 
 	// Navigation arrows
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
+	// navigation: {
+	// 	nextEl: ".swiper-button-next",
+	// 	prevEl: ".swiper-button-prev",
+	// },
 });
 
 // Подключение управления Swiper Slider-ом секции Stories
@@ -107,7 +108,7 @@ $(document).ready(function () {
 
 	tabsItem.on("click", function (event) {
 		var activeContent = $(this).attr("data-target");
-		console.log(activeContent);
+		// console.log(activeContent);
 		tabsItem.removeClass("trending-links__item--selected");
 		contentItem.removeClass("trending__wrapper--active");
 		$(activeContent).addClass("trending__wrapper--active");
