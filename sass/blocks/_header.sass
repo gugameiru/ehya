@@ -30,8 +30,8 @@
       color: $font-color
       margin-right: 40px
       outline-width: 0
-      &:hover
-        box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
+      // &:hover
+        // box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
   &-menu
     &-button
       display: none
@@ -42,7 +42,7 @@
         display: none
         &--visible
           display: none
-          z-index: 10
+          z-index: 30
           position: fixed
           background-color: $white
           padding: 36px 24px
@@ -59,8 +59,6 @@
           background-color: transparent
           padding: 0
           cursor: pointer
-          &:hover
-            box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
           &-image
             object-fit: cover
             width: 24px
@@ -80,8 +78,6 @@
           color: $font-color
           margin-right: 40px
           outline-width: 0
-          &:hover
-            box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
           &--button
             width: 100%
             text-align: center
