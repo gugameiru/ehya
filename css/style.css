@@ -1479,10 +1479,10 @@ template {
   text-align: center;
   font-family: Open Sans;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  color: #183B56;
+  color: #5A7184;
 }
 
 .footer-bottom__image {
@@ -1994,7 +1994,10 @@ template {
     line-height: 24px;
   }
   .footer__first-column__icon-wrapper {
-    width: 40%;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
