@@ -84,7 +84,8 @@
   &__swiper
     &-container
       flex-basis: 65%
-      height: 500px
+      min-height: 500px
+      max-width: 1195px
     &-wrapper
       height: 100%
     &-slide
@@ -106,13 +107,14 @@
       line-height: 32px
       letter-spacing: 0.2px
       color: $font-color
+      max-width: 100%
       margin-bottom: 22px
       &__wrapper
         position: absolute
-        width: 312px
-        height: 178px
-        padding: 20px 20px 0 20px
-        top: 296px
+        max-width: 312px
+        
+        padding: 20px 10px 0 20px
+        top: 92%
         left: 10px
         background-color: $block-color
     &-link
@@ -127,15 +129,10 @@
       // &:hover
       //   box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
     &-image
-      position: absolute
-      width: 100%
-      top: -15%
+      max-width: 100%
       &__wrapper
-        width: 312px
-        height: 317px
+        max-width: 312px
         border-radius: 8px 8px 0px 0px
-        overflow: hidden
-        position: relative
 .low-opacity
   opacity: 60%
 

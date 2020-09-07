@@ -57,12 +57,10 @@
     &__swiper
       &-container
         flex-basis: auto
+        width: 100%
       &-slide
-        justify-content: flex-start
-    &__picture
-      &-image
-        &__wrapper
-          width: 318px
+        justify-content: flex-start   
+        flex-basis: 100%
   .cta
     & > .container
       width: 100%
@@ -218,74 +216,22 @@
     &-pagination
       position: static
       padding: 0
-@media ( max-width: 740px )
+@media (max-width: 720px)
   .stories
-    & > .container
-      max-width: 740px
-      padding: 0 10px
-    &__wrapper
-      padding-top: 44px
-    &__description
-      &-hashtag
-        width: 80px
-        padding: 2px 12px
-      &-title
-        &--adaptive
-          font-size: 28px
-          line-height: 36px
-          text-align: center
-          letter-spacing: 0.2px
-      &-text
-        font-size: 16px
-        line-height: 28px
-        text-align: center
-        max-width: 90%
-      &-button
-        &__prev, &__next
-          width: 48px
-          height: 48px
-        &__prev
-          margin-right: 16px
-        &-image
-          &__prev, &__next
-            width: 13px
-            height: 16px
-            top: 34%
-            left: 36%
     &__swiper
       &-container
-        margin-top: -10px
-        height: 880px
+        min-height: 1000px
+        width: 100% 
       &-slide
         flex-direction: column
-        justify-content: flex-start
-        align-items: flex-start
-        padding-left: 0.9%
+        align-items: center
+        justify-content: space-between
+        min-height: 840px
     &__picture
       &-wrapper
-        margin-left: 0
-        &:first-child
-            margin-bottom: 154px
-      &-image
-        &__wrapper
-          height: 318px
-          width: 318px  
-      &-title
-        font-size: 20px
-        line-height: 24px
-        letter-spacing: 0.2px
-        width: 246px
-        margin-bottom: 16px
-        &__wrapper
-          top: 260px
-      &-link
-        font-size: 16px
-        line-height: 22px
+        flex-basis: 75%
 @media ( max-width: 600px )
-  .stories
-    &__swiper
-      &-slide
-        padding-left: 0.65%
+  
   .footer
     & > .container
       max-width: 600px
@@ -435,10 +381,7 @@
     top: 60%
     right: 50%
     transform: translateX(12%)
-  .stories
-    &__swiper
-      &-slide
-        padding-left: 0.4%
+  
 @media (max-width: 460px)
   .trending
     &__title
@@ -572,7 +515,7 @@
         margin-top: 10px
   .stories
     & > .container
-      max-width: 740px
+      max-width: 100%
       padding: 0 10px
     &__wrapper
       padding-top: 44px
@@ -605,12 +548,10 @@
             left: 36%
     &__swiper
       &-container
+        min-height: 860px
         margin-top: -10px
-        height: 880px
       &-slide
-        flex-direction: column
-        justify-content: flex-start
-        align-items: flex-start
+        min-height: 640px
         padding-left: 0
     &__picture
       &-wrapper
@@ -695,6 +636,9 @@
         margin-bottom: 24px  
       &-text
         max-width: 100%
+    &__swiper
+      &-container
+        min-height: 876px
   .cta
     & > .container
       padding-top: 24px
