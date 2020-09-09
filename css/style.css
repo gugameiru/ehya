@@ -646,6 +646,7 @@ template {
 
 .collection {
   padding: 120px 0;
+  padding-bottom: 86px;
 }
 
 .collection > .container {
@@ -656,12 +657,12 @@ template {
 .collection__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 2;
+  -ms-grid-rows: 3;
   -ms-grid-columns: 3;
-      grid-template: 2 / 3;
+      grid-template: 3 / 3;
   grid-gap: 30px;
-  -ms-grid-columns: auto auto minmax(370px, 1fr);
-      grid-template-columns: auto auto minmax(370px, 1fr);
+  -ms-grid-columns: auto auto minmax(420px, 1fr);
+      grid-template-columns: auto auto minmax(420px, 1fr);
 }
 
 .collection__item {
@@ -670,12 +671,9 @@ template {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 100%;
 }
 
 .collection__item--001 {
-  width: auto;
-  max-width: 100%;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / span 2;
@@ -698,8 +696,8 @@ template {
 
 .collection__content-wrapper {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1 / span 2;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / span 3;
   -ms-grid-column: 3;
   grid-column: 3;
   padding-left: 28px;
@@ -1389,25 +1387,23 @@ template {
 }
 
 .footer__icon {
-  position: absolute;
-  top: 14px;
-  left: 13px;
-}
-
-.footer__icon-google {
-  position: absolute;
-  top: 12px;
-  left: 12px;
+  display: block;
 }
 
 .footer__icon-background {
-  position: relative;
   width: 40px;
   height: 40px;
   margin-right: 8px;
   border-radius: 50%;
   background-color: rgba(90, 113, 132, 0.1);
   outline-width: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: center;
 }
 
 .footer-links__title {
@@ -1482,8 +1478,8 @@ template {
 
 .footer-bottom__image {
   position: absolute;
-  top: 35%;
-  left: 29%;
+  top: 34%;
+  left: 27%;
 }
 
 .footer-bottom__image-background {
@@ -1600,6 +1596,9 @@ template {
   .collection__item {
     width: auto;
     max-width: 100%;
+  }
+  .collection__item--001 {
+    height: 100%;
   }
   .stories > .container {
     max-width: 750px;
@@ -2053,7 +2052,7 @@ template {
     line-height: 28px;
   }
   .cta-subscribe label {
-    top: 105px;
+    top: -25px;
     font-size: 14px;
     width: 100%;
     margin-left: auto;

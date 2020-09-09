@@ -26,21 +26,19 @@
         color: $hero-text-color
         margin-bottom: 28px
   &__icon
-    position: absolute
-    top: 14px
-    left: 13px
-    &-google
-      position: absolute
-      top: 12px
-      left: 12px
+    // position: absolute
+    display: block
     &-background
-      position: relative
+      // position: relative
       width: 40px
       height: 40px
       margin-right: 8px
       border-radius: 50%
       background-color: $footer-circle-color
       outline-width: 0
+      display: flex
+      justify-content: center
+      vertical-align: center
       // &:hover
       //   box-shadow: 0 0 20px $hover-color inset, 0 0 20px $hover-color
   &-links
@@ -92,8 +90,8 @@
       color: $hero-text-color
     &__image
       position: absolute
-      top: 35%
-      left: 29%
+      top: 34%
+      left: 27%
       &-background
         width: 56px
         height: 56px
