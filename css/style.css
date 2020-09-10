@@ -1723,6 +1723,12 @@ template {
   }
 }
 
+@media (max-width: 980px) {
+  .cta-description__text {
+    max-width: 95%;
+  }
+}
+
 @media (max-width: 840px) {
   .trending__wrapper {
     -webkit-box-pack: space-evenly;
