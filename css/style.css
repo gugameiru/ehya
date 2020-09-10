@@ -1403,7 +1403,9 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  vertical-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-links__title {
@@ -2298,6 +2300,7 @@ template {
   .stories__swiper-slide {
     min-height: 640px;
     padding-left: 0;
+    padding-right: 0;
   }
   .stories__picture-wrapper {
     margin-left: 0;
